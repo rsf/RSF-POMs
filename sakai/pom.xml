@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
+                      http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <name>Sakai Core Builder </name>
+  <groupId>uk.org.ponder.pure-poms</groupId>
+  <artifactId>core-sakai-builder</artifactId>
+  <packaging>pom</packaging>
+  <version>
+    ${rsfutil.version}-sakai_${sakairsf.sakai.version}
+  </version>
+  <properties>
+    <sakairsf.sakai.version>2.2.x</sakairsf.sakai.version>
+    <rsfutil.version>0.7.1RC4</rsfutil.version>
+  </properties>
+  <modules>
+    <module>../../SakaiRSF</module> 
+    <module>../../SakaiRSFComponents</module>
+  </modules>
+</project>
