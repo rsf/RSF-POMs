@@ -24,8 +24,7 @@
     <repository>
       <id>CARET</id>
       <name>CARET Maven Repository</name>
-      <layout>legacy</layout>
-      <url>http://www2.caret.cam.ac.uk/maven</url>
+      <url>http://www2.caret.cam.ac.uk/maven2</url>
       <snapshots>
         <enabled>false</enabled>
       </snapshots>
