@@ -9,9 +9,9 @@
   <packaging>pom</packaging>
   <name>RSF Master POM</name>
   <properties>
-    <rsfutil.version>0.7.1</rsfutil.version>
-    <ponderutilcore.version>1.2.1</ponderutilcore.version>
-    <jservletutil.version>1.2.1</jservletutil.version>
+    <rsfutil.version>0.7.2M5-SNAPSHOT</rsfutil.version>
+    <ponderutilcore.version>1.2.2M5-SNAPSHOT</ponderutilcore.version>
+    <jservletutil.version>1.2.2M5-SNAPSHOT</jservletutil.version>
   </properties>
   <version>M2</version>
   <organization>
@@ -19,6 +19,14 @@
     <url>http://www.caret.cam.ac.uk/</url>
   </organization>
   <inceptionYear>2005</inceptionYear>
+  
+  <distributionManagement>
+    <repository>
+      <id>CARET-Maven2-dev</id>
+      <name>CARET Maven 2 Dev repository</name>
+      <url>scp://amb26@catnep.caret.cam.ac.uk/home/www2/htdocs/maven2dev</url>
+    </repository>
+  </distributionManagement>
   
   <repositories>
     <repository>
