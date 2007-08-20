@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>uk.org.ponder.pure-poms</groupId>
+  <artifactId>standard-sakai-tool</artifactId>
+  <packaging>pom</packaging>
+  <name>Standard Sakai Tool base POM</name>
+  <version>POM-3</version>
+  <parent>
+    <artifactId>master</artifactId>
+    <groupId>org.sakaiproject</groupId>
+    <version>M2</version>
+  </parent>
+  <description>
+    A base POM holding common definitions suitable for a Sakai Tool WAR
+    project
+  </description>
+  <distributionManagement>
+    <repository>
+      <id>CARET-Maven2-dev</id>
+      <name>CARET Maven 2 Dev repository</name>
+      <url>scp://catnep.caret.cam.ac.uk/home/www2/htdocs/maven2dev</url>
+    </repository>
+  </distributionManagement>
+  <!-- maven repositories -->
+  <repositories>
+    <repository>
+      <id>Sakaiproject-Maven2</id>
+      <name>Sakaiproject Maven 2 Repository</name>
+      <url>https://source.sakaiproject.org/maven2</url>
+    </repository>
+    <repository>
+      <id>CARET-Maven2</id>
+      <name>CARET Maven 2 Repository</name>
+      <url>http://www2.caret.cam.ac.uk/maven2</url>
+    </repository>
+    <repository>
+      <id>CARET-Maven2-dev</id>
+      <name>CARET Maven 2 Development Repository</name>
+      <url>http://www2.caret.cam.ac.uk/maven2dev</url>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+    </repository>
+  </repositories>
+  <pluginRepositories>
+    <pluginRepository>
+      <id>CARET-Maven2</id>
+      <name>CARET Maven 2 Repository</name>
+      <url>http://www2.caret.cam.ac.uk/maven2</url>
+    </pluginRepository>
+  </pluginRepositories>
+  <build>
+    <sourceDirectory>src/java</sourceDirectory>
+    <resources>
+      <resource>
+        <directory>src/java</directory>
+        <includes>
+          <include>**/*.xml</include>
+          <include>**/*.properties</include>
+        </includes>
+      </resource>
+    </resources>
+    <plugins>
+      <plugin>
+        <groupId>org.sakaiproject.maven.plugins</groupId>
+        <artifactId>sakai</artifactId>
+        <version>M2</version>
+        <configuration>
+          <deployDirectory>${sakai.appserver.home}</deployDirectory>
+        </configuration>
+      </plugin>
+      <plugin>
+        <artifactId>maven-war-plugin</artifactId>
+        <configuration>
+          <warSourceDirectory>src/webapp</warSourceDirectory>
+        </configuration>
+      </plugin>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          <source>1.5</source>
+          <target>1.5</target>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-rsf-plugin</artifactId>
+      </plugin>
+    </plugins>
+  </build>
+  <dependencies>
+    <dependency>
+      <groupId>log4j</groupId>
+      <artifactId>log4j</artifactId>
+      <version>1.2.14</version>
+    </dependency>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.2</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+</project>
+
