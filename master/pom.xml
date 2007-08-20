@@ -13,7 +13,7 @@
     <ponderutilcore.version>1.2.2M5-SNAPSHOT</ponderutilcore.version>
     <jservletutil.version>1.2.2M5-SNAPSHOT</jservletutil.version>
   </properties>
-  <version>POM-2</version>
+  <version>POM-3</version>
   <organization>
     <name>CARET</name>
     <url>http://www.caret.cam.ac.uk/</url>

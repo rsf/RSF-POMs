@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
+                      http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <name>RSF Core POM Builder</name>
+  <groupId>uk.org.ponder.pure-poms</groupId>
+  <artifactId>core-pom-builder</artifactId>
+  <version>POM-3</version>
+  <packaging>pom</packaging>
+  <modules>
+    <module>master</module>
+    <module>standard-jar</module>
+    <module>standard-war</module>
+  </modules>
+</project>
