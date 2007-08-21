@@ -284,7 +284,8 @@
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-rsf-plugin</artifactId>
         <!-- We MUST specify the version. There is a Maven bug that prevents
-        downloading of the correct repository metadata if the  -->
+        downloading of the correct repository metadata which would allow
+        the latest version to be discovered -->
         <version>1.0</version>
       </plugin>
     </plugins>
