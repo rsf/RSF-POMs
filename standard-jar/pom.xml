@@ -81,9 +81,7 @@
     <developerConnection>
       scm:svn:https://saffron.caret.cam.ac.uk/svn/projects/trunk/
     </developerConnection>
-    <url>
-      https://saffron.caret.cam.ac.uk/svn/projects/trunk/
-    </url>
+    <url>https://saffron.caret.cam.ac.uk/svn/projects/trunk/</url>
   </scm>
 
   <issueManagement>
@@ -283,23 +281,11 @@
         </configuration>
       </plugin>
       <plugin>
-        <groupId>org.codehaus.cargo</groupId>
-        <artifactId>cargo-maven2-plugin</artifactId>
-        <configuration>
-          <container>
-            <containerId>${appserver.id}</containerId>
-          </container>
-          <configuration>
-            <home>${appserver.home}</home>
-            <deployables>
-              <deployable>
-                <properties>
-                  <context>${pom.artifactId}</context>
-                </properties>
-              </deployable>
-            </deployables>
-          </configuration>
-        </configuration>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-rsf-plugin</artifactId>
+        <!-- We MUST specify the version. There is a Maven bug that prevents
+        downloading of the correct repository metadata if the  -->
+        <version>1.0</version>
       </plugin>
     </plugins>
   </build>
