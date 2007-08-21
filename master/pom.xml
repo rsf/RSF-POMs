@@ -9,9 +9,9 @@
   <packaging>pom</packaging>
   <name>RSF Master POM</name>
   <properties>
-    <rsfutil.version>0.7.2M5-SNAPSHOT</rsfutil.version>
-    <ponderutilcore.version>1.2.2M5-SNAPSHOT</ponderutilcore.version>
-    <jservletutil.version>1.2.2M5-SNAPSHOT</jservletutil.version>
+    <rsfutil.version>0.7.2RC1</rsfutil.version>
+    <ponderutilcore.version>1.2.2RC1</ponderutilcore.version>
+    <jservletutil.version>1.2.2RC1</jservletutil.version>
   </properties>
   <version>POM-3</version>
   <organization>

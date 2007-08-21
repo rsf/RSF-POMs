@@ -8,7 +8,7 @@
   <groupId>uk.org.ponder.pure-poms</groupId>
   <artifactId>core-rsf-builder</artifactId>
   <properties>
-    <rsfutil.version>0.7.2M5-SNAPSHOT</rsfutil.version>
+    <rsfutil.version>0.7.2RC1</rsfutil.version>
   </properties>
   <parent>
     <artifactId>rsf-master-pom</artifactId>
