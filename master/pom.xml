@@ -38,6 +38,15 @@
       </snapshots>
     </repository>
   </repositories>
+  
+  <pluginRepositories>
+    <pluginRepository>
+      <id>CARET-Maven2</id>
+      <name>CARET Maven 2 Repository</name>
+      <url>http://www2.caret.cam.ac.uk/maven2</url>
+    </pluginRepository>
+  </pluginRepositories>
+  
   <!-- Needed to shut up broken bloody Surefire plugin -->
   <dependencies>
     <dependency>

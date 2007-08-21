@@ -49,6 +49,14 @@
     </repository>
   </repositories>
 
+  <pluginRepositories>
+    <pluginRepository>
+      <id>CARET-Maven2</id>
+      <name>CARET Maven 2 Repository</name>
+      <url>http://www2.caret.cam.ac.uk/maven2</url>
+    </pluginRepository>
+  </pluginRepositories>
+
   <!-- RSF mailing lists -->
   <mailingLists>
     <mailingList>
@@ -284,8 +292,8 @@
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-rsf-plugin</artifactId>
         <!-- We MUST specify the version. There is a Maven bug that prevents
-        downloading of the correct repository metadata which would allow
-        the latest version to be discovered -->
+          downloading of the correct repository metadata which would allow
+          the latest version to be discovered -->
         <version>1.0</version>
       </plugin>
     </plugins>
