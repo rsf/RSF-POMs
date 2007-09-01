@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>uk.org.ponder.pure-poms</groupId>
+    <artifactId>standard-war</artifactId>
+    <version>POM-3</version>
+  </parent>
+  <groupId>uk.org.ponder.pure-poms</groupId>
+  <artifactId>standard-maven2-war</artifactId>
+  <packaging>pom</packaging>
+  <name>Standard Maven 2 WAR base POM</name>
+  <version>POM-3</version>
+  <description>
+    A base POM holding common definitions suitable for a WAR project, using
+    Maven 2 standard layout
+  </description>
+  <build>
+    <sourceDirectory>src/main/java</sourceDirectory>
+    <resources>
+      <resource>
+        <directory>src/main/java</directory>
+        <includes>
+          <include>**/*.xml</include>
+          <include>**/*.properties</include>
+        </includes>
+      </resource>
+    </resources>
+    <plugins>
+      <plugin>
+        <artifactId>maven-war-plugin</artifactId>
+        <configuration>
+          <warSourceDirectory>src/main/webapp</warSourceDirectory>
+        </configuration>
+      </plugin>
+     
+    </plugins>
+  </build>
+</project>
+

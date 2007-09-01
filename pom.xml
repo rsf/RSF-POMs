@@ -13,6 +13,7 @@
     <module>master</module>
     <module>standard-jar</module>
     <module>standard-war</module>
+    <module>standard-maven2-war</module>
   </modules>
 
   <distributionManagement>
