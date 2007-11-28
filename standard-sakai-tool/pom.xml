@@ -7,11 +7,11 @@
   <artifactId>standard-sakai-tool</artifactId>
   <packaging>pom</packaging>
   <name>Standard Sakai Tool base POM</name>
-  <version>POM-3</version>
+  <version>SNAPSHOT</version>
   <parent>
     <artifactId>master</artifactId>
     <groupId>org.sakaiproject</groupId>
-    <version>M2</version>
+    <version>SNAPSHOT</version>
   </parent>
   <description>
     A base POM holding common definitions suitable for a Sakai Tool WAR
@@ -67,7 +67,7 @@
       <plugin>
         <groupId>org.sakaiproject.maven.plugins</groupId>
         <artifactId>sakai</artifactId>
-        <version>M2</version>
+        <version>SNAPSHOT</version>
         <configuration>
           <deployDirectory>${sakai.appserver.home}</deployDirectory>
         </configuration>
