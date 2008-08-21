@@ -8,11 +8,6 @@
   <artifactId>rsf-master-pom</artifactId>
   <packaging>pom</packaging>
   <name>RSF Master POM</name>
-  <properties>
-    <rsfutil.version>0.7.3M1-SNAPSHOT</rsfutil.version>
-    <ponderutilcore.version>1.2.3M1-SNAPSHOT</ponderutilcore.version>
-    <jservletutil.version>1.2.3M1-SNAPSHOT</jservletutil.version>
-  </properties>
   <version>POM-3</version>
   <organization>
     <name>CARET</name>
