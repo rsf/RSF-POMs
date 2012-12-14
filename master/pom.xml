@@ -8,7 +8,7 @@
   <artifactId>rsf-master-pom</artifactId>
   <packaging>pom</packaging>
   <name>RSF Master POM</name>
-  <version>POM-3</version>
+  <version>POM-4</version>
   <organization>
     <name>CARET</name>
     <url>http://www.caret.cam.ac.uk/</url>
@@ -32,6 +32,18 @@
         <enabled>false</enabled>
       </snapshots>
     </repository>
+    <repository>
+      <id>sakai-maven2-snapshots</id>
+      <name>Sakai Maven Snapshot Repo</name>
+      <layout>default</layout>
+      <url>http://source.sakaiproject.org/maven2-snapshots</url>
+      <releases>
+        <enabled>false</enabled>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+  </repository>
   </repositories>
   
   <pluginRepositories>
