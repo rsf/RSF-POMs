@@ -3,26 +3,32 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
                       http://maven.apache.org/maven-v4_0_0.xsd">
+
+  <parent>
+      <groupId>org.sonatype.oss</groupId>
+      <artifactId>oss-parent</artifactId>
+      <version>7</version>
+  </parent>
   <modelVersion>4.0.0</modelVersion>
   <name>RSF Core POM Builder</name>
   <groupId>uk.org.ponder.pure-poms</groupId>
   <artifactId>core-pom-builder</artifactId>
-  <version>POM-3</version>
+  <version>POM-4-SNAPSHOT</version>
   <packaging>pom</packaging>
   <modules>
     <module>master</module>
     <module>standard-jar</module>
     <module>standard-war</module>
+	<!--
     <module>standard-maven2-war</module>
+	-->
   </modules>
 
-  <distributionManagement>
-    <repository>
-      <id>CARET-Maven2-dev</id>
-      <name>CARET Maven 2 Dev repository</name>
-      <url>
-        scp://amb26@catnep.caret.cam.ac.uk/home/www2/htdocs/maven2dev
-      </url>
-    </repository>
-  </distributionManagement>
+   <scm>
+      <connection>
+         scm:git:git://github.com/rsf/RSF-POMs.git
+      </connection>
+      <developerConnection>scm:git:git@github.com:rsf/RSF-POMs.git</developerConnection>
+      <url>scm:git:https://github.com/rsf/RSF-POMs.git</url>
+   </scm>
 </project>

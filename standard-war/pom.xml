@@ -2,22 +2,20 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <parent>
+      <groupId>org.sonatype.oss</groupId>
+      <artifactId>oss-parent</artifactId>
+      <version>7</version>
+  </parent>
   <modelVersion>4.0.0</modelVersion>
   <groupId>uk.org.ponder.pure-poms</groupId>
   <artifactId>standard-war</artifactId>
   <packaging>pom</packaging>
   <name>Standard WAR base POM</name>
-  <version>POM-3</version>
+  <version>POM-4-SNAPSHOT</version>
   <description>
     A base POM holding common definitions suitable for a WAR project
   </description>
-  <distributionManagement>
-    <repository>
-      <id>CARET-Maven2-dev</id>
-      <name>CARET Maven 2 Dev repository</name>
-      <url>scp://catnep.caret.cam.ac.uk/home/www2/htdocs/maven2dev</url>
-    </repository>
-  </distributionManagement>
   <!-- maven repositories -->
   <repositories>
     <repository>
@@ -25,27 +23,7 @@
       <name>Sakaiproject Maven 2 Repository</name>
       <url>https://source.sakaiproject.org/maven2</url>
     </repository>
-    <repository>
-      <id>CARET-Maven2</id>
-      <name>CARET Maven 2 Repository</name>
-      <url>http://www2.caret.cam.ac.uk/maven2</url>
-    </repository>
-    <repository>
-      <id>CARET-Maven2-dev</id>
-      <name>CARET Maven 2 Development Repository</name>
-      <url>http://www2.caret.cam.ac.uk/maven2dev</url>
-      <snapshots>
-        <enabled>true</enabled>
-      </snapshots>
-    </repository>
   </repositories>
-  <pluginRepositories>
-    <pluginRepository>
-      <id>CARET-Maven2</id>
-      <name>CARET Maven 2 Repository</name>
-      <url>http://www2.caret.cam.ac.uk/maven2</url>
-    </pluginRepository>
-  </pluginRepositories>
   <build>
     <sourceDirectory>src/java</sourceDirectory>
     <resources>

@@ -3,44 +3,22 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
                       http://maven.apache.org/maven-v4_0_0.xsd">
+  <parent>
+    <groupId>org.sonatype.oss</groupId>
+    <artifactId>oss-parent</artifactId>
+    <version>7</version>
+  </parent>
   <modelVersion>4.0.0</modelVersion>
   <groupId>uk.org.ponder</groupId>
   <artifactId>rsf-master-pom</artifactId>
   <packaging>pom</packaging>
   <name>RSF Master POM</name>
-  <version>POM-3</version>
+  <version>POM-4-SNAPSHOT</version>
   <organization>
     <name>CARET</name>
     <url>http://www.caret.cam.ac.uk/</url>
   </organization>
   <inceptionYear>2005</inceptionYear>
-  
-  <distributionManagement>
-    <repository>
-      <id>CARET-Maven2-dev</id>
-      <name>CARET Maven 2 Dev repository</name>
-      <url>scp://amb26@catnep.caret.cam.ac.uk/home/www2/htdocs/maven2dev</url>
-    </repository>
-  </distributionManagement>
-  
-  <repositories>
-    <repository>
-      <id>CARET</id>
-      <name>CARET Maven Repository</name>
-      <url>http://www2.caret.cam.ac.uk/maven2</url>
-      <snapshots>
-        <enabled>false</enabled>
-      </snapshots>
-    </repository>
-  </repositories>
-  
-  <pluginRepositories>
-    <pluginRepository>
-      <id>CARET-Maven2</id>
-      <name>CARET Maven 2 Repository</name>
-      <url>http://www2.caret.cam.ac.uk/maven2</url>
-    </pluginRepository>
-  </pluginRepositories>
   
   <!-- Needed to shut up broken bloody Surefire plugin -->
   <dependencies>

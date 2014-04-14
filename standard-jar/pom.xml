@@ -2,30 +2,22 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+  <parent>
+      <groupId>org.sonatype.oss</groupId>
+      <artifactId>oss-parent</artifactId>
+      <version>7</version>
+  </parent>
   <modelVersion>4.0.0</modelVersion>
   <groupId>uk.org.ponder.pure-poms</groupId>
   <artifactId>standard-jar</artifactId>
-  <version>POM-3</version>
+  <version>POM-4-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>Standard JAR base POM</name>
 
   <description>
     A base POM holding common definitions suitable for a JAR project
   </description>
-
-  <!-- maven 2 repo -->
-  <distributionManagement>
-    <downloadUrl>
-      http://www2.caret.cam.ac.uk/rsfwiki/Wiki.jsp?page=TrunkCode
-    </downloadUrl>
-    <repository>
-      <id>CARET-Maven2-dev</id>
-      <name>CARET Maven 2 Dev repository</name>
-      <url>
-        scp://amb26@catnep.caret.cam.ac.uk/home/www2/htdocs/maven2dev
-      </url>
-    </repository>
-  </distributionManagement>
 
   <!-- maven repositories -->
   <repositories>
@@ -34,28 +26,7 @@
       <name>Sakaiproject Maven 2 Repository</name>
       <url>https://source.sakaiproject.org/maven2</url>
     </repository>
-    <repository>
-      <id>CARET-Maven2</id>
-      <name>CARET Maven 2 Repository</name>
-      <url>http://www2.caret.cam.ac.uk/maven2</url>
-    </repository>
-    <repository>
-      <id>CARET-Maven2-dev</id>
-      <name>CARET Maven 2 Development Repository</name>
-      <url>http://www2.caret.cam.ac.uk/maven2dev</url>
-      <snapshots>
-        <enabled>true</enabled>
-      </snapshots>
-    </repository>
   </repositories>
-
-  <pluginRepositories>
-    <pluginRepository>
-      <id>CARET-Maven2</id>
-      <name>CARET Maven 2 Repository</name>
-      <url>http://www2.caret.cam.ac.uk/maven2</url>
-    </pluginRepository>
-  </pluginRepositories>
 
   <!-- RSF mailing lists -->
   <mailingLists>
@@ -81,58 +52,10 @@
     </mailingList>
   </mailingLists>
 
-  <!-- define source code repository -->
-  <scm>
-    <connection>
-      scm:svn:https://saffron.caret.cam.ac.uk/svn/projects/trunk/
-    </connection>
-    <developerConnection>
-      scm:svn:https://saffron.caret.cam.ac.uk/svn/projects/trunk/
-    </developerConnection>
-    <url>https://saffron.caret.cam.ac.uk/svn/projects/trunk/</url>
-  </scm>
-
   <issueManagement>
     <system>JIRA</system>
     <url>http://www.caret.cam.ac.uk/jira/browse/RSF</url>
   </issueManagement>
-
-  <ciManagement>
-    <system>Continuum</system>
-    <url>http://saffron.caret.cam.ac.uk/continuum</url>
-    <notifiers>
-      <notifier>
-        <type>mail</type>
-        <sendOnError>true</sendOnError>
-        <sendOnFailure>true</sendOnFailure>
-        <sendOnSuccess>false</sendOnSuccess>
-        <sendOnWarning>false</sendOnWarning>
-        <configuration>
-          <address>antranig@caret.cam.ac.uk</address>
-        </configuration>
-      </notifier>
-      <notifier>
-        <type>mail</type>
-        <sendOnError>true</sendOnError>
-        <sendOnFailure>true</sendOnFailure>
-        <sendOnSuccess>false</sendOnSuccess>
-        <sendOnWarning>false</sendOnWarning>
-        <configuration>
-          <address>aaron@caret.cam.ac.uk</address>
-        </configuration>
-      </notifier>
-      <notifier>
-        <type>mail</type>
-        <sendOnError>true</sendOnError>
-        <sendOnFailure>true</sendOnFailure>
-        <sendOnSuccess>false</sendOnSuccess>
-        <sendOnWarning>false</sendOnWarning>
-        <configuration>
-          <address>sgithens@caret.cam.ac.uk</address>
-        </configuration>
-      </notifier>
-    </notifiers>
-  </ciManagement>
 
   <!-- define the license -->
   <licenses>
