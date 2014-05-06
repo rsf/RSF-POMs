@@ -9,7 +9,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>uk.org.ponder.pure-poms</groupId>
   <artifactId>standard-jar</artifactId>
-  <version>POM-4</version>
+  <version>POM-5-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>Standard JAR base POM</name>
 
