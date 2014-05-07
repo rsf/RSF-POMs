@@ -10,7 +10,7 @@
   <artifactId>rsf-master-pom</artifactId>
   <packaging>pom</packaging>
   <name>RSF Master POM</name>
-  <version>POM-5-SNAPSHOT</version>
+  <version>POM-5</version>
   <organization>
     <name>CARET</name>
     <url>http://www.caret.cam.ac.uk/</url>
