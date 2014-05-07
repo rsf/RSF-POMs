@@ -68,11 +68,6 @@
   <reporting>
     <plugins>
       <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-release-plugin</artifactId>
-        <version>2.5</version>
-      </plugin>
-      <plugin>
         <!-- javadocs -->
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-javadoc-plugin</artifactId>
@@ -201,6 +196,12 @@
       </resource>
     </resources>
     <plugins>
+		<plugin>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-release-plugin</artifactId>
+			<version>2.5</version>
+		</plugin>
+
       <plugin>
         <artifactId>maven-war-plugin</artifactId>
         <configuration>
