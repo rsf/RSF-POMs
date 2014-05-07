@@ -10,7 +10,7 @@
   <name>RSF Core POM Builder</name>
   <groupId>uk.org.ponder.pure-poms</groupId>
   <artifactId>core-pom-builder</artifactId>
-  <version>POM-6-SNAPSHOT</version>
+  <version>POM-6</version>
   <packaging>pom</packaging>
   <modules>
     <module>master</module>

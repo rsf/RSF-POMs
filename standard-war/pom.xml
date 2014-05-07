@@ -10,7 +10,7 @@
   <artifactId>standard-war</artifactId>
   <packaging>pom</packaging>
   <name>Standard WAR base POM</name>
-  <version>POM-6-SNAPSHOT</version>
+  <version>POM-6</version>
   <description>
     A base POM holding common definitions suitable for a WAR project
   </description>
